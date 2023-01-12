@@ -11,8 +11,14 @@ body {
   justify-content: center;
 }
 
-img {
+#mobile, #mobile-text {
   display: none;
+}
+
+img {
+  width: 100%;
+  position: absolute;
+  top: 5%;
 }
 
 video {
@@ -25,7 +31,14 @@ video {
     display: none;
   }
 
+  img#mobile-text {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+  }
+
   img#mobile {
     display: block;
-    width: 90%;
+    width: 105%;
   }

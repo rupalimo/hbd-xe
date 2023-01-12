@@ -27,6 +27,11 @@ video {
 
 /* MOBILE */
 @media (max-width: 465px) {
+  body {
+    overflow-y: hidden;
+    touch-action: none;
+  }
+
   video {
     display: none;
   }

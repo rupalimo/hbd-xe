@@ -15,8 +15,10 @@ $(document).ready(function () {
 		} else {
 			document.getElementById('player-1').pause();
 			playing = false;
-			$(this).css('background', '#ebff94');
-			$('.hbd-1').css('display', 'block');
+			$(this).css({
+				'background': '#ebff94',
+				'border-radius': '10rem',
+			});
 			$('.name-1').css('display', 'none');
 		}
 	});
@@ -31,7 +33,10 @@ $(document).ready(function () {
 		} else {
 			document.getElementById('player-2').pause();
 			playing = false;
-			$('.hbd-2').css('display', 'block');
+			$(this).css({
+				'background': '#cbddfb',
+				'border-radius': '10rem',
+			});
 			$('.name-2').css('display', 'none');
 		}
 	});
@@ -45,7 +50,10 @@ $(document).ready(function () {
 		} else {
 			document.getElementById('player-3').pause();
 			playing = false;
-			$('.hbd-3').css('display', 'block');
+			$(this).css({
+				'background': '#b0e0e6',
+				'border-radius': '10rem',
+			});
 			$('.name-3').css('display', 'none');
 		}
 	});

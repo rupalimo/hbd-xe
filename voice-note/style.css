@@ -1,3 +1,45 @@
+/* Animations */
+
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 0px 0px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 500px 500px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 500px 500px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 500px 500px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 500px 500px;
+  }
+}
 :root {
 	--primary-font: serif;
 	--secondary-font: sans-serif;
@@ -11,7 +53,9 @@
 	color: var(--text-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	/* rgb(213 33 49);
+  --background: rgb(135, 43, 255);
+
+  /* rgb(213 33 49);
     border-radius: 100%;
     box-shadow: rgb(96 14 14) 0px 0px 12px 0px inset; */
 }
@@ -52,15 +96,33 @@ transform: translateX(50%);
 .grid__container {
 	width: 100%;
 	height: 100%;
-	background-image: url(IMG_6409.jpg);
-
-	background-position: center;
-	background-repeat: no-repeat;
+	background-image: url('background-img-2.png');
+background-position: center;
+background-repeat: repeat;
 	background-size: cover;
+	
 
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
 	grid-template-rows: repeat(24, 1fr);
+/* animation: slide 3s linear infinite;
+-webkit-animation: slide 3s linear infinite;
+-moz-animation: slide 3s linear infinite;
+-o-animation: slide 3s linear infinite; */
+  -webkit-animation: bg-scrolling-reverse 30s infinite;
+  
+  -moz-animation: bg-scrolling-reverse 30s infinite;
+
+  -o-animation: bg-scrolling-reverse 30s infinite;
+  
+  animation: bg-scrolling-reverse 30s infinite;
+  
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background-color: #ffffff;
+  box-shadow:var(--text-color) 0 0 10px 4px inset;
 }
 
 .grid--item {
